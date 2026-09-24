@@ -1,3 +1,5 @@
+
+
 # AI 虚拟试穿 Skill（ai-tryon）
 
 一个用于 AI 虚拟试衣的 Agent Skill。用户可以通过“指定服装图/模特图”或“文字描述”快速生成试穿效果图，并可继续生成多角度素材和展示视频。
@@ -87,6 +89,7 @@ python scripts/image_gen_tryon.py \
 python scripts/tryon_runner.py \
   --garment garment.jpg \
   --model model.jpg \
+  --garment-part top \
   --output-dir "$OUTPUT_DIR"
 ```
 
