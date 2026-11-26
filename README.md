@@ -1,5 +1,9 @@
 # AI 虚拟试穿 Skill（ai-tryon）
 
+<!-- yarkr:badges:start -->
+[![Indexed on Yarkr](https://api.yarkr.com/functions/v1/api/api/v1/badges/repos/wzj177/shop-tryon-skill/version.svg)](https://yarkr.com/arks/wzj177/shop-tryon-skill)
+<!-- yarkr:badges:end -->
+
 一个用于 AI 虚拟试衣的 Agent Skill。用户可以通过“指定服装图/模特图”或“文字描述”快速生成试穿效果图，并可继续生成多角度素材和展示视频。
 
 本项目适合以下场景：
@@ -180,3 +184,35 @@ Agent：可以做局部替换。我将保留上装，仅替换下装，并保持
 # 示例：运行测试
 python scripts/test_partial_tryon.py
 ```
+
+<!-- yarkr:install:start -->
+## Install with Yarkr
+
+This repo is indexed on [Yarkr](https://yarkr.com/arks/wzj177/shop-tryon-skill) as the ark [wzj177/shop-tryon-skill](https://yarkr.com/arks/wzj177/shop-tryon-skill), so its skills install into Claude Code, Codex, Cursor and other agent harnesses with one command.
+
+### CLI
+
+Install the whole ark, which Yarkr keeps equal to this repo:
+
+```bash
+npx yarkr-cli sync wzj177/shop-tryon-skill
+```
+
+Or add individual skills:
+
+```bash
+npx yarkr-cli add skill:wzj177/shop-tryon-skill/ai-tryon
+```
+
+No Node.js? `curl -fsSL https://yarkr.com/install.sh | sh` (macOS, Linux) or `irm https://yarkr.com/install.ps1 | iex` (Windows PowerShell) installs `yarkr` as a standalone binary; then type `yarkr` in place of `npx yarkr-cli`.
+
+### MCP
+
+Connect your agent to the ark over MCP:
+
+```bash
+npx yarkr-cli mcp add wzj177/shop-tryon-skill
+```
+
+Or point any MCP client at `https://api.yarkr.com/functions/v1/api/mcp/o/wzj177/shop-tryon-skill`.
+<!-- yarkr:install:end -->
